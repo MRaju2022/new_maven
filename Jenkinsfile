@@ -1,9 +1,9 @@
 node {
-    stage('continuousDownload:Master')
+    stage('continuousDownload:Loans')
     {
         git 'https://github.com/MRaju2022/maven.git'
     }
-    stage('continuousBuild:Master')
+    stage('continuousBuild:Loans')
     {
         sh 'mvn package'
     }
